@@ -12,7 +12,7 @@ Connect to running docker container:
 docker exec -it <container-id> bash
 ```
 
-Run as docker container and login with current non-root user:
+Run docker container and login with current non-root user:
 
 ```bash
 docker run -it -u $(id -u):$(id -g) <container-id> /bin/bash
