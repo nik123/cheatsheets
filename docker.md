@@ -6,6 +6,11 @@ Save docker image to tar.gz archive:
 docker save myimage:latest | gzip > myimage_latest.tar.gz
 ```
 
+Load docker from tar.gz archive:
+```bash
+docker load -i myimage_latest.tar.gz
+```
+
 Connect to running docker container:
 
 ```bash
