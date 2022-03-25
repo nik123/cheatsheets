@@ -6,3 +6,8 @@ Scan devices in given network:
 ```
 sudo nmap -sP 192.168.88.0/24
 ```
+
+Find program which uses given port:
+```
+nmap -sV --reason -A -p 5672 localhost
+```
