@@ -12,6 +12,13 @@ kubectl config get-contexts
 kubectl config use-context <context-aname>
 ```
 
+## Resource deletion
+
+```
+# Delete namespace and all resources in the namespace
+kubectl delete namespace <namespace-name>
+```
+
 ## Misc.
 
 ```
@@ -22,7 +29,6 @@ kubectl get all
 
 kubectl apply -f <file-name>
 
-kubectl delete all --all
 
 # get the documentation for pod manifests
 kubectl explain pods
