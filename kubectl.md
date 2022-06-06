@@ -12,11 +12,20 @@ kubectl config get-contexts
 kubectl config use-context <context-aname>
 ```
 
-## Resource deletion
+## Delete resources
 
 ```
 # Delete namespace and all resources in the namespace
 kubectl delete namespace <namespace-name>
+```
+
+## Logging
+
+```
+kubectl -n <namespace> logs <pod-name> <container-name>
+
+# do not exit and wait for new log messages:
+kubectl -n <namespace> logs -f <pod-name> <container-name>
 ```
 
 ## Misc.
