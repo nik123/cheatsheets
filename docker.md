@@ -31,3 +31,9 @@ docker run -it --gpus all <image>
 # Select GPUs 0 and 2 (numbers according to nvidia-smi output):
 docker run -it --gpus device=0,2 <image>
 ```
+
+Build docker image:
+
+```bash
+DOCKER_BUILDKIT=1 docker build -t <image-tag> -f Dockerfile --progress tty .
+```
