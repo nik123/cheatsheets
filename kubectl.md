@@ -46,7 +46,11 @@ kubectl explain pods
 kubectl -n <namespace> exec -it <pod-name> -c <container-name> -- bash
 ```
 
-# minikube
+## Plugins
+
+- `ctx` and `ns`: https://github.com/ahmetb/kubectx
+
+## minikube
 
 ```
 minikube start
