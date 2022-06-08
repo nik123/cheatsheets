@@ -9,7 +9,7 @@ See also: https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 kubectl config get-contexts
 
 # Switch context:
-kubectl config use-context <context-aname>
+kubectl config use-context <context-name>
 ```
 
 ## Delete resources
