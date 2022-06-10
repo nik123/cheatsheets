@@ -10,7 +10,7 @@ Get [window class](https://tronche.com/gui/x/xlib/ICC/client-to-window-manager/w
 WM_CLASS(STRING) = "gnome-terminal-server", "Gnome-terminal"
 ```
 
-3. The former value is class name, the former value is window class.
+3. The former value is class name, the latter value is window class.
 
 ## Custom classes for GTK applications
 
