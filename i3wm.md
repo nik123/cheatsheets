@@ -1,8 +1,10 @@
 # i3wm
 
+i3wm - tiling window manager.
+
 ## Window classes
 
-Get [window class](https://tronche.com/gui/x/xlib/ICC/client-to-window-manager/wm-class.html#XClassHint):
+One may use window classes to set specific behaviour for applications. Window class is stored in [WM_CLASS structure](https://tronche.com/gui/x/xlib/ICC/client-to-window-manager/wm-class.html#XClassHint). Steps to get window class:
 1. execute `xprop | grep WM_CLASS`.
 2. Click on the window. Possible output:
 
