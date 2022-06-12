@@ -14,7 +14,7 @@ WM_CLASS(STRING) = "gnome-terminal-server", "Gnome-terminal"
 
 3. The former value is class name, the latter value is window class.
 
-## Custom classes for GTK applications
+### GTK applications
 
 GTK applications have `--class` property (may be not listed in `--help` output), which allows to set custom class name for new window. One may use it for better control over windows in i3wm:
 
