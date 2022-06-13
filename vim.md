@@ -5,9 +5,14 @@ Other cheat sheets:
 
 # Shortcuts
 
-Ctrl + r - redo
-i - insert before cursor
-a - insert after cursor
+- Ctrl + r - redo
+- i - insert before cursor
+- a - insert after cursor
+
+## Navigation
+
+- `c-u`, `c-d`. half-page up, half-page down. 
+- `{`, `}` - next empty line, previous empty line. 
 
 # Search
 
