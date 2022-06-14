@@ -25,7 +25,7 @@ scp foobar.txt your_username@remotehost.edu:/some/remote/directory
 ## rsync
 
 Cинтаксис: `rsync [-опции] src dest`, т.е. если надо скопировать с
-сервера на хост, то нужно что-то типа `rsync -rv neuro@85.10.206.114:/remote/path/ /local/path/`
+сервера на хост, то нужно что-то типа `rsync -rv user@host:/remote/path/ /local/path/`
 
 Опция `--exclude` позволяет игнорировать файлы и каталоги, попадающий под
 указанный шаблон. Пример:
@@ -93,7 +93,7 @@ Keychain
 Команда на MacOS:
 
 ```
-ssh -i /path/to/private/key pi@192.168.1.34
+ssh -i /path/to/private/key user@host
 ```
 
 ### С сохранением в Keychain
