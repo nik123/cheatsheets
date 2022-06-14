@@ -2,6 +2,9 @@
 
 Если не знаешь что такое ssh, то тебе не нужен документ.
 
+Other cheatsheets:
+1. https://www.wagner.pp.ru/fossil/advice/doc/trunk/ssh.md
+
 # Копирование файлов
 
 ## SCP
