@@ -35,6 +35,7 @@ kubectl get nodes
 kubectl get pod
 kubectl get deployment
 kubectl get all
+kubectl -n <namespace> get events --field-selector involvedObject.name=<pod-name>
 
 kubectl apply -f <file-name>
 
