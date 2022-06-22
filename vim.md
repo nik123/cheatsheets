@@ -9,9 +9,13 @@ Other cheat sheets:
 - i - insert before cursor
 - a - insert after cursor
 
+# Commands
+
+- `dt<character>` - delete til character, e.g. `dtc` - delete til next 'c' occurence.
+
 ## Navigation
 
-- `c-u`, `c-d`. half-page up, half-page down. 
+- `c-u`, `c-d`. half-page up, half-page down.
 - `{`, `}` - next empty line, previous empty line. 
 
 # Search
