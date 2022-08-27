@@ -20,7 +20,7 @@ Other cheat sheets:
 
 # Search
 
-1. Search text selected in visual mode:
-    1. Select text
-    2. Yank
-    3. `q/p` - for details about 'q' see vim help on command-line window.
+Search text selected in visual mode:
+1. Select text
+2. Yank
+3. `q/p` - for details about 'q' see vim help on command-line window.
