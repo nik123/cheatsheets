@@ -17,6 +17,9 @@ kubectl config use-context <context-name>
 ```
 # Delete namespace and all resources in the namespace
 kubectl delete namespace <namespace-name>
+
+# Delete all resources in a namespace, but keep the namespace:
+kubectl -n <namespace> delete all --all
 ```
 
 ## Logging
