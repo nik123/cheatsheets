@@ -10,6 +10,9 @@ kubectl config get-contexts
 
 # Switch context:
 kubectl config use-context <context-name>
+
+# Set new default namespace for current context
+kubectl config set-context --current --namespace=mynamespace
 ```
 
 ## Delete resources
