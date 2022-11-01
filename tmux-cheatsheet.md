@@ -66,9 +66,7 @@ swap-window -s 3 -t 1
 - resize-pane -L 20 (Resizes the current pane left by 20 cells)
 - resize-pane -R 20 (Resizes the current pane right by 20 cells)
 
-# Копирование
-
-## Select and copy text
+# Select and copy text
 
 Selecting and copying text in tmux:
 1. Enable vi copy mode in tmux config: `set-window-option -g mode-keys vi`.
@@ -76,7 +74,7 @@ Selecting and copying text in tmux:
 3. Move around with vi navigation keys.
 4. Begin selection with `Space`.
 5. Copy selection with `Enter`.
-6. Past with `:paste-buffer` in command mode.
+6. Past with `:paste-buffer` in command mode or with `ctrl+b+]`.
 
 ## vim + ssh
 
