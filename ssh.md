@@ -230,3 +230,8 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null user@host
 ```
 $ssh-add -l
 ```
+
+SSH agent forwarding via command line options:
+```
+ssh -A user@host
+```
