@@ -3,6 +3,12 @@
 Other cheat sheets:
 - https://devhints.io/vim
 
+# Text objects
+
+- `g_` - like `$` but without newline character.
+- `0` - begining of the line
+- `^` - first word in the line
+
 # Shortcuts
 
 - Ctrl + r - redo
@@ -16,7 +22,7 @@ Other cheat sheets:
 ## Navigation
 
 - `c-u`, `c-d`. half-page up, half-page down.
-- `{`, `}` - next empty line, previous empty line. 
+- `{`, `}` - next empty line, previous empty line.
 
 # Search
 
