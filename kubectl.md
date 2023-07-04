@@ -41,6 +41,7 @@ kubectl get nodes
 kubectl get pod
 kubectl get deployment
 kubectl get all
+# Events, connected with object
 kubectl -n <namespace> get events --field-selector involvedObject.name=<pod-name>
 
 kubectl apply -f <file-name>
@@ -51,6 +52,9 @@ kubectl explain pods
 
 # log in into container on one of the pods:
 kubectl -n <namespace> exec -it <pod-name> -c <container-name> -- bash
+
+# Port-forwarding:
+kubectl port-forward svc/postgresql 5432:5432
 ```
 
 ## Plugins
