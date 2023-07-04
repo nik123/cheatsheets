@@ -18,6 +18,7 @@ Other cheat sheets:
 # Commands
 
 - `dt<character>` - delete til character, e.g. `dtc` - delete til next 'c' occurence.
+- `:setlocal ff=unix` - replace Windows line endings with Linux line endings.
 
 ## Navigation
 
