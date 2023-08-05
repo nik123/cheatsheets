@@ -1,8 +1,12 @@
 # Docker
 
-Save docker image to tar.gz archive:
+Saving docker image:
 
 ```bash
+# Saving to a tar archive:
+docker save -o myimage_latest.tar myimage:latest
+
+# Saving to a tar.gz archive:
 docker save myimage:latest | gzip > myimage_latest.tar.gz
 ```
 
