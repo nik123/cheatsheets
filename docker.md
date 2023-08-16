@@ -21,12 +21,26 @@ Connect to running docker container:
 docker exec -it <container-id> bash
 ```
 
+## Build
+
 Build docker image:
 ```bash
 DOCKER_BUILDKIT=1 docker build -t <image-tag> -f Dockerfile --progress tty .
 ```
 
-## run
+### Building for another platform
+
+The easiest (but the slowest) way:
+```
+# Install QEMU:
+sudo apt-get update
+sudo apt-get install qemu qemu-user-static binfmt-support
+
+# Build arm64 image on amd64 platform:
+docker build -t your-image-name:arm64 --platform linux/arm64 .
+```
+
+## Run
 
 Run docker container, start interactive shell and rm container after exit:
 ```
