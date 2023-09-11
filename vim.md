@@ -9,12 +9,6 @@ Other cheat sheets:
 - `0` - begining of the line
 - `^` - first word in the line
 
-# Shortcuts
-
-- Ctrl + r - redo
-- i - insert before cursor
-- a - insert after cursor
-
 # Commands
 
 - `dt<character>` - delete til character, e.g. `dtc` - delete til next 'c' occurence.
@@ -24,6 +18,13 @@ Other cheat sheets:
 
 - `c-u`, `c-d`. half-page up, half-page down.
 - `{`, `}` - next empty line, previous empty line.
+
+# Misc.
+
+- Ctrl + r - redo
+- i - insert before cursor
+- a - insert after cursor
+- `>`, `<` (in visual mode) - shift line rightwards or leftwards.
 
 # Search
 
