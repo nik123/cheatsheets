@@ -11,3 +11,8 @@ Find program which uses given port:
 ```
 nmap -sV --reason -A -p 5672 localhost
 ```
+
+List ports in use:
+```
+sudo netstat -tunlp
+```
