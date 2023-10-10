@@ -49,3 +49,32 @@ jupyter contrib nbextension install --user
 Useful extensions (for me):
 1. [Jupyter Black](https://github.com/drillan/jupyter-black)
 1. toc2 (table of contents).
+
+# Kernels
+
+Add kernel from another environemnt (i.e. not the environment where jupyter server itself is installed):
+```
+# Assuming conda environment
+
+# Activate environment:
+conda activate <my-environment>
+
+# Install ipykernel
+pip install ipykernel
+
+# Add kernel to Jupyter
+# --user for userwide installation, command may attempt to install flag
+# systemwide without this flag.
+python -m ipykernel install --user --name py36-test
+```
+
+Uninstall kernel:
+```
+# Assuming conda environment
+# Activate environement with jupyterlab
+# NOT the one with kernel itself!
+conda activate <jupyterlab-env>
+
+# Remove kernel:
+jupyter kernelspec uninstall unwanted-kernel
+```
