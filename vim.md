@@ -9,6 +9,13 @@ Other cheat sheets:
 - `0` - begining of the line
 - `^` - first word in the line
 
+# Folding
+
+- `zM` - close all
+- `zR` - open all
+- `za` - toggle
+- `zo`/`zc` - open/close non-recursively 
+
 # Commands
 
 - `dt<character>` - delete til character, e.g. `dtc` - delete til next 'c' occurence.
