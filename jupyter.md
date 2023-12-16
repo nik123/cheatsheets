@@ -19,6 +19,15 @@ plt.rcParams['figure.figsize'] = (16, 9)
 pylab.rcParams['figure.figsize'] = (16, 9)
 ```
 
+Interactive matplotlib in Jupyterlab:
+```
+%matplotlib ipympl
+import matplotlib.pyplot as plt
+...
+plt.figure()
+plt.imshow(im)
+```
+
 Запуск на указанном порту и сетевом интерфейсе:
 ```
 $jupyter notebook --no-browser --port 9999 --ip <ip-address>
