@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = (16, 9) 
 
 # Jupyter lab:
-%pylab inline
+%matplotlib inline
 pylab.rcParams['figure.figsize'] = (16, 9)
 ```
 
