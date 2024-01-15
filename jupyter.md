@@ -74,7 +74,7 @@ pip install ipykernel
 # Add kernel to Jupyter
 # --user for userwide installation, command may attempt to install flag
 # systemwide without this flag.
-python -m ipykernel install --user --name py36-test
+python -m ipykernel install --user --name py39-test
 ```
 
 Uninstall kernel:
