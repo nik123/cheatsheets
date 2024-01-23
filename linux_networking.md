@@ -15,4 +15,6 @@ nmap -sV --reason -A -p 5672 localhost
 List ports in use:
 ```
 sudo netstat -tunlp
+# alternative:
+sudo ss -tunlp
 ```
