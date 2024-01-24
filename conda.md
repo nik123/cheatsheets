@@ -9,3 +9,8 @@ List "revisions" of current environment:
 ```
 conda list --revisions
 ```
+
+Remove environment:
+```
+conda remove --name <name> --all
+``
