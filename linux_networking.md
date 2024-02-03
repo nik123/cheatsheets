@@ -18,3 +18,12 @@ sudo netstat -tunlp
 # alternative:
 sudo ss -tunlp
 ```
+
+List network interfaces:
+```
+# Option 1:
+ifconfig
+
+# Option 2:
+nmcli
+```
