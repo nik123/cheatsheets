@@ -15,7 +15,7 @@ virtualenv -p python3 --prompt="(AmazingApp)" venv
 virtualenv -p python3.7 --prompt="(AmazingApp)" venv
 
 # Если нужно использовать установленные в систему (напр. через apt) пакеты:
-virtualenv -p python3.7 --system-site-packages --prompt="(AmazingApp)" venv
+virtualenv -p python3.7 --system-site-packages --prompt="AmazingApp" venv
 ```
 
 Значение параметров:
