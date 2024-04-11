@@ -12,10 +12,10 @@
 virtualenv -p python3 --prompt="AmazingApp" venv
 
 # Если нужна недефолтная версия Python:
-virtualenv -p python3.7 --prompt="AmazingApp" venv
+virtualenv -p python3.9 --prompt="AmazingApp" venv
 
 # Если нужно использовать установленные в систему (напр. через apt) пакеты:
-virtualenv -p python3.7 --system-site-packages --prompt="AmazingApp" venv
+virtualenv -p python3.9 --system-site-packages --prompt="AmazingApp" venv
 ```
 
 Значение параметров:
