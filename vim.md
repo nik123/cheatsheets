@@ -32,6 +32,7 @@ Other cheat sheets:
 - i - insert before cursor
 - a - insert after cursor
 - `>`, `<` (in visual mode) - shift line rightwards or leftwards.
+- `"+y` - copy to system clipboard(neovim).
 
 # Search
 
