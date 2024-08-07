@@ -2,7 +2,7 @@
 
 Create conda environment with a certain python version:
 ```
-conda create -n <name> python=3.9
+conda create -n <name> python=3.10
 ```
 
 List "revisions" of current environment:
