@@ -1,61 +1,58 @@
 # SSH
 
-Если не знаешь что такое ssh, то тебе не нужен документ.
-
 Other cheatsheets:
 1. https://www.wagner.pp.ru/fossil/advice/doc/trunk/ssh.md
 
-# Копирование файлов
+# Copying files
 
 ## SCP
 
-С сервера на клиент:
+From server to client:
 
 ```
 scp your_username@remotehost.edu:foobar.txt /some/local/directory
 ```
 
-С клиента на сервер:
+From client to server:
 
 ```
 scp foobar.txt your_username@remotehost.edu:/some/remote/directory
 ```
 
-Дополнительные параметры:
+Extra parameters:
 
-- `-P 11022` - указать порт.
+- `-P 11022` - set port.
 
 ## rsync
 
-Cинтаксис: `rsync [-опции] src dest`, т.е. если надо скопировать с
-сервера на хост, то нужно что-то типа `rsync -rv user@host:/remote/path/ /local/path/`
+Syntax: `rsync [-опции] src dest`, e.g. `rsync -rv user@host:/remote/path/ /local/path/`
 
-Опция `--exclude` позволяет игнорировать файлы и каталоги, попадающий под
-указанный шаблон. Пример:
+Option `--exclude` allows ignoring files and directories that match the specified pattern. Example:
 
 ```
 rsync -rv /local/path/ user@host:/remote/path/ --exclude __pycache__/ --exclude venv/ --exclude log_dir/ --exclude ".*"
 ```
 
-Если ssh висит на нестандартном порту:
+If ssh is listening to non-standard port:
 
 ```
 rsync -rv -e "ssh -p 11022" /local/path/ user@host:/remote/path/ --exclude __pycache__/ --exclude venv/ --exclude log_dir/ --exclude ".*"
 ```
 
-Доп. опции:
-- Есть опция `--delete`, которая удаляет "лишние" файлы в каталоге назначения.
-- Есть опция `--progress` для отображения прогресса.
+Additional options:
 
-# Аутентификация по ключам
+- `--delete` removes extra files in the destination.
+- `--progress` shows progress.
 
-Игнорировать ключи в каталоге `~/.ssh`:
+# Key authorization
+
+Ignore keys in `~/.ssh` dir:
 
 ```
 ssh -o IdentitiesOnly=yes -i identity_file user@host
 ```
 
-Генерация ключа на локальной машине:
+Generate key on a local machine:
 
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
