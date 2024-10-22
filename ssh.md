@@ -224,9 +224,9 @@ jupyter-notebook --no-browser
 ssh -L 9000:localhost:8888 -L 9001:localhost:6006 user@host
 ```
 
-# Разное
+# Misc
 
-Не сохранять имя в `known_hosts`:
+Do not save name in `known_hosts`:
 
 ```
 ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null user@host
@@ -241,4 +241,9 @@ $ssh-add -l
 SSH agent forwarding via command line options:
 ```
 ssh -A user@host
+```
+
+autossh:
+```
+autossh -M 9052 -D 9051 pq-hosting
 ```
