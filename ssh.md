@@ -245,5 +245,5 @@ ssh -A user@host
 
 autossh:
 ```
-autossh -M 9052 -D 9051 pq-hosting
+autossh -M 9052 -D 9051 user@host
 ```
