@@ -245,5 +245,5 @@ ssh -A user@host
 
 autossh:
 ```
-autossh -M 9052 -D 9051 user@host
+autossh -M 0 -D 9051 user@host
 ```
