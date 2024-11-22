@@ -231,7 +231,7 @@ git config --global core.excludesfile
 git config --global core.excludesfile '~/.gitignore'
 ```
 
-# Метки (tags)
+# Tags
 
 Самый элементарный способ создания метки:
 
