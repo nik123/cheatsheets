@@ -33,6 +33,7 @@ Other cheat sheets:
 - a - insert after cursor
 - `>`, `<` (in visual mode) - shift line rightwards or leftwards.
 - `"+y` - copy to system clipboard(neovim).
+- Copy text from registr to vim command line: enter command mode, press `:`, press `ctrl+r`, press `"`.
 
 # Search
 
