@@ -40,6 +40,26 @@ sudo apt-get install qemu qemu-user-static binfmt-support
 docker build -t your-image-name:arm64 --platform linux/arm64 .
 ```
 
+### Secrets
+
+Command to apss secrets:
+```
+docker build \
+  --secret id=aws-secret-access-key,env=AWS_SECRET_ACCESS_KEY \
+  --secret id=aws-access-key-id,env=AWS_ACCESS_KEY_ID \
+  ...
+```
+
+Inside Dockerfile:
+```
+# Mount secrets inside image and save them inside env variables:
+RUN --mount=type=secret,id=aws-access-key-id \
+    --mount=type=secret,id=aws-secret-access-key \
+    AWS_ACCESS_KEY_ID=$(cat /run/secrets/aws-access-key-id) \
+    AWS_SECRET_ACCESS_KEY=$(cat /run/secrets/aws-secret-access-key) \
+    ...
+```
+
 ## Run
 
 Run docker container, start interactive shell and rm container after exit:
