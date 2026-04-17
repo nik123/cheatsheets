@@ -28,6 +28,8 @@
 
 - `git rev-parse --show-toplevel` - получить корень репозитория.
 
+- `git -c user.name="Your Name" -c user.email="you@example.com" commit -m "your message"` - закоммитить без прпоисывания имени/email в конфиге гита.
+
 # Работа с remote
 
 `git remote show origin` - Информация о remote-репозитории.
